@@ -10,4 +10,3 @@ Backend: PHP, Laravel
 
 Database: Sql, MySQL
 
-Description: ***This web application is in development so code will not be avilable for public. Check the link***
