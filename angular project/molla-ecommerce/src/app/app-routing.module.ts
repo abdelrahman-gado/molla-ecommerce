@@ -7,6 +7,7 @@ import { FAQComponent } from './component/07-faq/faq.component';
 import { ContactComponent } from './component/06-contact/contact.component';
 import { CartComponent } from './component/08-cart/cart.component';
 import { WishlistComponent } from './component/09-wishlist/wishlist.component';
+import { ProductDetailComponent } from './component/10-product-detail/product-detail.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'faq',component:FAQComponent},
   {path:'cart',component:CartComponent},
   {path:'wishlist',component:WishlistComponent},
+  {path:'detail',component:ProductDetailComponent},
 ];
 
 @NgModule({

@@ -12,6 +12,7 @@ import { FAQComponent } from './component/07-faq/faq.component';
 import { ContactComponent } from './component/06-contact/contact.component';
 import { CartComponent } from './component/08-cart/cart.component';
 import { WishlistComponent } from './component/09-wishlist/wishlist.component';
+import { ProductDetailComponent } from './component/10-product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { WishlistComponent } from './component/09-wishlist/wishlist.component';
     AboutComponent,
     ContactComponent,
     CartComponent,
-    WishlistComponent
+    WishlistComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
