@@ -25,9 +25,30 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/vendor/line-awesome/line-awesome/line-awesome/css/line-awesome.min.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/plugins/owl-carousel/owl.carousel.css",
+              "src/assets/css/plugins/magnific-popup/magnific-popup.css",
+              "src/assets/css/plugins/jquery.countdown.css",
+              "src/assets/css/style.css",
+              "src/assets/css/skins/skin-demo-4.css",
+              "src/assets/css/demos/demo-4.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/jquery.hoverIntent.min.js",
+              "src/assets/js/jquery.waypoints.min.js",
+              "src/assets/js/superfish.min.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/bootstrap-input-spinner.js",
+              "src/assets/js/jquery.plugin.min.js",
+              "src/assets/js/jquery.magnific-popup.min.js",
+              "src/assets/js/jquery.countdown.min.js",
+              "src/assets/js/main.js",
+              "src/assets/js/demos/demo-4.js"
+            ]
           },
           "configurations": {
             "production": {
