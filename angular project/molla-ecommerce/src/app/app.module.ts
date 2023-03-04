@@ -15,9 +15,13 @@ import { CartComponent } from './component/08-cart/cart.component';
 import { WishlistComponent } from './component/09-wishlist/wishlist.component';
 import { ProductDetailComponent } from './component/10-product-detail/product-detail.component';
 import { CategoriesComponent } from './component/11-categories/categories.component';
-import { ProductsComponent } from './component/12-products/products.component';
 import { CategoryComponent } from './component/11-categories/category/category.component';
-import { ProductComponent } from './component/12-products/product/product.component';
+import { NewArrivalsComponent } from './component/12-new-arrivals/new-arrivals.component';
+import { NewProductComponent } from './component/12-new-arrivals/new-product/new-product.component';
+import { RecommendedProductsComponent } from './component/14-recommended-products/recommended-products.component';
+import { ProductComponent } from './component/14-recommended-products/product/product.component';
+import { TrendingComponent } from './component/13-trending/trending.component';
+import { TrendingProductComponent } from './component/13-trending/trending-product/trending-product.component';
 
 
 @NgModule({
@@ -35,9 +39,13 @@ import { ProductComponent } from './component/12-products/product/product.compon
     WishlistComponent,
     ProductDetailComponent,
     CategoriesComponent,
-    ProductsComponent,
     CategoryComponent,
-    ProductComponent
+    NewArrivalsComponent,
+    NewProductComponent,
+    RecommendedProductsComponent,
+    ProductComponent,
+    TrendingComponent,
+    TrendingProductComponent
   ],
   imports: [
     BrowserModule,

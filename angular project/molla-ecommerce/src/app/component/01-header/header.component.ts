@@ -13,6 +13,6 @@ categories: Category[]=[]
 constructor(private categoryService:CategoryService){}
 
 ngOnInit(): void {
-    this.categoryService.getCategories().subscribe((data:any)=>{this.categories=data})
+    this.categoryService.getCategories().subscribe((data:any)=>{this.categories=data.data})
 }
 }

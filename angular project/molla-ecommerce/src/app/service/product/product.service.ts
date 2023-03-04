@@ -10,7 +10,19 @@ export class ProductService {
 constructor(private httpClient:HttpClient) { }
 
 getProducts(){
+  return this.httpClient.get(`${environment.apiUrl}products`)
+}
+
+getNewArrivals(){
   return this.httpClient.get(`${environment.apiUrl}products/new-arrivals`)
+}
+
+getRecommended(){
+  return this.httpClient.get(`${environment.apiUrl}products/recommended`)
+}
+
+getTrending(){
+  return this.httpClient.get(`${environment.apiUrl}products/trending`)
 }
 
 }
