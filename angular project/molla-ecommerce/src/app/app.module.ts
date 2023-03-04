@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,7 +20,6 @@ import { ProductsComponent } from './component/12-products/products.component';
 import { CategoryComponent } from './component/11-categories/category/category.component';
 import { ProductComponent } from './component/12-products/product/product.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,14 +37,10 @@ import { ProductComponent } from './component/12-products/product/product.compon
     CategoriesComponent,
     ProductsComponent,
     CategoryComponent,
-    ProductComponent
+    ProductComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
