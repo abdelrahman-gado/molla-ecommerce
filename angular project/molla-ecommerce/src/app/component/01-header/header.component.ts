@@ -19,12 +19,9 @@ export class HeaderComponent implements OnInit {
     private http: HttpClient
   ) {}
 
-  ngOnInit(): void {
-    this.categoryService.getCategories().subscribe((data: any) => {
-      this.categories = data;
-    });
-  }
-
+ngOnInit(): void {
+    this.categoryService.getCategories().subscribe((data:any)=>{this.categories=data.data})
+}
   onRegister(form: NgForm) {
     const name = form.value.name;
     const email = form.value.email;
