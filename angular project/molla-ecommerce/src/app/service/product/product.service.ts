@@ -8,9 +8,6 @@ import { environment } from 'src/app/environment/environment';
 export class ProductService {
   constructor(private httpClient: HttpClient) {}
 
-  getProducts() {
-    return this.httpClient.get(`${environment.apiUrl}products/new-arrivals`);
-  }
 
   getShopProducts(page: string, colors: string[] | string, categories: string[] | string, price: number) {
     let path = `products?page=${page}&`;
@@ -32,4 +29,19 @@ export class ProductService {
       
     return this.httpClient.get(`${environment.apiUrl}${path}`);
   }
-}
+  
+  getNewArrivals(){
+    return this.httpClient.get(`${environment.apiUrl}products/new-arrivals`)
+  }
+
+  getRecommended(){
+    return this.httpClient.get(`${environment.apiUrl}products/recommended`)
+  }
+
+  getTrending(){
+    return this.httpClient.get(`${environment.apiUrl}products/trending`)
+  }
+
+  getProducts(){
+    return this.httpClient.get(`${environment.apiUrl}products`)
+  }

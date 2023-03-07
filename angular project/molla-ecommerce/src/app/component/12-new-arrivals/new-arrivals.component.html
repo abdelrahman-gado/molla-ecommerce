@@ -10,13 +10,14 @@
 
   <!-- Start products -->
   <div class="products">
-     <div class="row "> <!--justify-content-center -->
-        <div class="col-5 col-md-3 col-lg-2">
-            <app-product style="padding-right: 20px;" [product]="p" *ngFor="let p of products"></app-product>
-        </div>
+    <div class="row">
+      <app-new-product
+        style="padding-right: 20px"
+        [product]="p"
+        *ngFor="let p of products"
+        class="col-6 col-md-3 col-lg-2"
+      ></app-new-product>
     </div>
   </div>
   <!-- End products -->
-
 </div>
-

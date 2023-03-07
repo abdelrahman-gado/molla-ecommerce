@@ -1,5 +1,4 @@
-import { Component,Input } from '@angular/core';
-import { Category } from 'src/app/interface/category';
+import { Component, Input } from '@angular/core';
 import { Product } from 'src/app/interface/product';
 
 @Component({
@@ -8,6 +7,5 @@ import { Product } from 'src/app/interface/product';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
- @Input() product: Product = {} as Product
- @Input() category: Category = {} as Category
+@Input() product:Product = {} as Product
 }
