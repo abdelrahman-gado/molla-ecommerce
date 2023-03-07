@@ -18,6 +18,7 @@ import { CategoriesComponent } from './component/11-categories/categories.compon
 import { ProductsComponent } from './component/12-products/products.component';
 import { CategoryComponent } from './component/11-categories/category/category.component';
 import { ProductComponent } from './component/12-products/product/product.component';
+import { ProductShopComponent } from './component/12-products/product-shop/product-shop.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { ProductComponent } from './component/12-products/product/product.compon
     CategoriesComponent,
     ProductsComponent,
     CategoryComponent,
-    ProductComponent
+    ProductComponent,
+    ProductShopComponent
   ],
   imports: [
     BrowserModule,

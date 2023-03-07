@@ -3,14 +3,33 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/app/environment/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
-  
-constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
-getProducts(){
-  return this.httpClient.get(`${environment.apiUrl}products/new-arrivals`)
-}
+  getProducts() {
+    return this.httpClient.get(`${environment.apiUrl}products/new-arrivals`);
+  }
 
+  getShopProducts(page: string, colors: string[] | string, categories: string[] | string, price: number) {
+    let path = `products?page=${page}&`;
+    if (colors && Array.isArray(colors)) {
+      path += colors.map((item) => "color[]=" + item).join("&");
+    } else if (typeof(colors) === "string" && colors.length > 0) {
+      path += "color[]=" + colors + "&";
+    }
+
+    if (categories && Array.isArray(categories)) {
+      path += categories.map((item) => 'category[]=' + item).join('&');
+    } else if (typeof(categories) === 'string' && categories.length > 0) {
+      path += "category[]=" + categories + "&";
+    }
+
+    if (price > 0) {
+      path += "&price=" + price;
+    }
+      
+    return this.httpClient.get(`${environment.apiUrl}${path}`);
+  }
 }
