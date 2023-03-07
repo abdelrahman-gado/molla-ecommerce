@@ -6,20 +6,20 @@ import { environment } from 'src/app/environment/environment';
   providedIn: 'root',
 })
 export class ProductService {
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) { }
 
 
   getShopProducts(page: string, colors: string[] | string, categories: string[] | string, price: number) {
     let path = `products?page=${page}&`;
     if (colors && Array.isArray(colors)) {
       path += colors.map((item) => "color[]=" + item).join("&");
-    } else if (typeof(colors) === "string" && colors.length > 0) {
+    } else if (typeof (colors) === "string" && colors.length > 0) {
       path += "color[]=" + colors + "&";
     }
 
     if (categories && Array.isArray(categories)) {
       path += categories.map((item) => 'category[]=' + item).join('&');
-    } else if (typeof(categories) === 'string' && categories.length > 0) {
+    } else if (typeof (categories) === 'string' && categories.length > 0) {
       path += "category[]=" + categories + "&";
     }
 
@@ -30,18 +30,19 @@ export class ProductService {
     return this.httpClient.get(`${environment.apiUrl}${path}`);
   }
   
-  getNewArrivals(){
+  getNewArrivals() {
     return this.httpClient.get(`${environment.apiUrl}products/new-arrivals`)
   }
 
-  getRecommended(){
+  getRecommended() {
     return this.httpClient.get(`${environment.apiUrl}products/recommended`)
   }
 
-  getTrending(){
+  getTrending() {
     return this.httpClient.get(`${environment.apiUrl}products/trending`)
   }
 
-  getProducts(){
+  getProducts() {
     return this.httpClient.get(`${environment.apiUrl}products`)
   }
+}

@@ -39,6 +39,7 @@ export class ShopComponent {
       this.selectedCatgeories = params['category'] || '';
       this.selectedPrice = parseFloat(params['price']) || 0;
 
+      
       this.productService
         .getShopProducts(
           this.page,
