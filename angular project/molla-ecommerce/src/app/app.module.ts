@@ -23,6 +23,9 @@ import { RecommendedProductsComponent } from './component/14-recommended-product
 import { ProductComponent } from './component/14-recommended-products/product/product.component';
 import { TrendingComponent } from './component/13-trending/trending.component';
 import { TrendingProductComponent } from './component/13-trending/trending-product/trending-product.component';
+import { AdminCategoriesComponent } from './component/15-admin/admin-categories/admin-categories.component';
+import { AdminProductsComponent } from './component/15-admin/admin-products/admin-products.component';
+import { AdminUsersComponent } from './component/15-admin/admin-users/admin-users.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { TrendingProductComponent } from './component/13-trending/trending-produ
     RecommendedProductsComponent,
     ProductComponent,
     TrendingComponent,
-    TrendingProductComponent
+    TrendingProductComponent,
+    AdminCategoriesComponent,
+    AdminProductsComponent,
+    AdminUsersComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   

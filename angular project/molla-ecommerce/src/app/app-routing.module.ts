@@ -8,6 +8,9 @@ import { ContactComponent } from './component/06-contact/contact.component';
 import { CartComponent } from './component/08-cart/cart.component';
 import { WishlistComponent } from './component/09-wishlist/wishlist.component';
 import { ProductDetailComponent } from './component/10-product-detail/product-detail.component';
+import { AdminCategoriesComponent } from './component/15-admin/admin-categories/admin-categories.component';
+import { AdminProductsComponent } from './component/15-admin/admin-products/admin-products.component';
+import { AdminUsersComponent } from './component/15-admin/admin-users/admin-users.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -18,7 +21,12 @@ const routes: Routes = [
   {path:'cart',component:CartComponent},
   {path:'wishlist',component:WishlistComponent},
   {path:'detail',component:ProductDetailComponent},
+  {path:"admin-categories",component:AdminCategoriesComponent},
+  {path:"admin-products",component:AdminProductsComponent},
+  {path:"admin-users",component:AdminUsersComponent},
 ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
