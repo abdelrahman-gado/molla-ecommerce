@@ -17,6 +17,7 @@ import { WishlistComponent } from './component/09-wishlist/wishlist.component';
 import { ProductDetailComponent } from './component/10-product-detail/product-detail.component';
 import { CategoriesComponent } from './component/11-categories/categories.component';
 import { CategoryComponent } from './component/11-categories/category/category.component';
+import { ProductShopComponent } from './component/12-products/product-shop/product-shop.component';
 import { NewArrivalsComponent } from './component/12-new-arrivals/new-arrivals.component';
 import { NewProductComponent } from './component/12-new-arrivals/new-product/new-product.component';
 import { RecommendedProductsComponent } from './component/14-recommended-products/recommended-products.component';
@@ -44,18 +45,15 @@ import { AdminUsersComponent } from './component/15-admin/admin-users/admin-user
     CategoriesComponent,
     CategoryComponent,
     ProductComponent,
+    ProductShopComponent,
     NewArrivalsComponent,
     NewProductComponent,
     RecommendedProductsComponent,
     ProductComponent,
     TrendingComponent,
-    TrendingProductComponent,
-    AdminCategoriesComponent,
-    AdminProductsComponent,
-    AdminUsersComponent,
+    TrendingProductComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-  
   providers: [],
   bootstrap: [AppComponent],
 })

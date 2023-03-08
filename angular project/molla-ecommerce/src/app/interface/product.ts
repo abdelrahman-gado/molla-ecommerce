@@ -9,5 +9,7 @@ export interface Product {
   discount: number,
   category_id: number,
   color_id: number,
-  category: Category
+  category: Category,
+  reviews_count: number
+  reviews_avg_rating: number
 }
