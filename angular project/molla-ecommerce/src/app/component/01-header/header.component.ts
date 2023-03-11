@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { environment } from 'src/app/environment/environment';
 import { Category } from 'src/app/interface/category';
-import { AuthenticationService } from 'src/app/service/authentication.service';
+import { AuthenticationService } from 'src/app/service/Auth/authentication.service';
 import { CategoryService } from 'src/app/service/category/category.service';
 
 @Component({
