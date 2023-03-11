@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +27,11 @@ import { TrendingProductComponent } from './component/13-trending/trending-produ
 import { AdminCategoriesComponent } from './component/15-admin/admin-categories/admin-categories.component';
 import { AdminProductsComponent } from './component/15-admin/admin-products/admin-products.component';
 import { AdminUsersComponent } from './component/15-admin/admin-users/admin-users.component';
+import { AdminUserUpdateComponent } from './component/15-admin/admin-user-update/admin-user-update.component';
+import { AdminProductEditComponent } from './component/15-admin/admin-product-edit/admin-product-edit.component';
+import { AdminProductShowComponent } from './component/15-admin/admin-product-show/admin-product-show.component';
+import { AdminCategoryShowComponent } from './component/15-admin/admin-category-show/admin-category-show.component';
+import { AdminCategoryEditComponent } from './component/15-admin/admin-category-edit/admin-category-edit.component';
 
 @NgModule({
   declarations: [
@@ -51,9 +56,17 @@ import { AdminUsersComponent } from './component/15-admin/admin-users/admin-user
     RecommendedProductsComponent,
     ProductComponent,
     TrendingComponent,
-    TrendingProductComponent
+    TrendingProductComponent,
+    AdminCategoriesComponent,
+    AdminProductsComponent,
+    AdminUsersComponent,
+    AdminUserUpdateComponent,
+    AdminProductEditComponent,
+    AdminProductShowComponent,
+    AdminCategoryShowComponent,
+    AdminCategoryEditComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

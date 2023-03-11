@@ -45,4 +45,9 @@ export class ProductService {
   getProducts() {
     return this.httpClient.get(`${environment.apiUrl}products`)
   }
+  
+  getProductsById(id:number) {
+    return this.httpClient.get(`${environment.apiUrl}products/${id}`)
+  }
+
 }

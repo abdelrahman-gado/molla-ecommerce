@@ -12,4 +12,7 @@ export class UserService {
   getUsers(){
    return this.httpClient.get(`${environment.apiUrl}users`)
   }
+  getUsersById(id:number){
+   return this.httpClient.get(`${environment.apiUrl}admin/users/${id}`)
+  }
 }

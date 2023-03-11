@@ -15,4 +15,8 @@ export class CategoryService {
      //let cat:Category[] = [{id:1,name:"aa",image:"haw"},{id:2,name:"aa",image:"haw"},{id:3,name:"aa",image:"haw"}]
      //return cat
   }
+
+  getCategoryById(id:number){
+    return this.httpClient.get(`${environment.apiUrl}categories/${id}`)
+  }
 }

@@ -11,6 +11,11 @@ import { ProductDetailComponent } from './component/10-product-detail/product-de
 import { AdminCategoriesComponent } from './component/15-admin/admin-categories/admin-categories.component';
 import { AdminProductsComponent } from './component/15-admin/admin-products/admin-products.component';
 import { AdminUsersComponent } from './component/15-admin/admin-users/admin-users.component';
+import { AdminUserUpdateComponent } from './component/15-admin/admin-user-update/admin-user-update.component';
+import { AdminProductShowComponent } from './component/15-admin/admin-product-show/admin-product-show.component';
+import { AdminCategoryShowComponent } from './component/15-admin/admin-category-show/admin-category-show.component';
+import { AdminCategoryEditComponent } from './component/15-admin/admin-category-edit/admin-category-edit.component';
+import { AdminProductEditComponent } from './component/15-admin/admin-product-edit/admin-product-edit.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -22,8 +27,13 @@ const routes: Routes = [
   {path:'wishlist',component:WishlistComponent},
   {path:'detail',component:ProductDetailComponent},
   {path:"admin-categories",component:AdminCategoriesComponent},
+  {path:"admin-category-show/:id",component:AdminCategoryShowComponent},
+  {path:"admin-category-edit/:id",component:AdminCategoryEditComponent},
   {path:"admin-products",component:AdminProductsComponent},
+  {path:'admin-product-show/:id',component:AdminProductShowComponent},
+  {path:'admin-product-edit/:id',component:AdminProductEditComponent},
   {path:"admin-users",component:AdminUsersComponent},
+  {path:'admin-user-update/:id',component:AdminUserUpdateComponent},
 ];
 
 
