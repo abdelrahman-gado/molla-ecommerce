@@ -8,15 +8,16 @@ import { ContactComponent } from './component/06-contact/contact.component';
 import { CartComponent } from './component/08-cart/cart.component';
 import { WishlistComponent } from './component/09-wishlist/wishlist.component';
 import { ProductDetailComponent } from './component/10-product-detail/product-detail.component';
-import { AdminCategoriesComponent } from './component/15-admin/admin-categories/admin-categories.component';
-import { AdminProductsComponent } from './component/15-admin/admin-products/admin-products.component';
-import { AdminUsersComponent } from './component/15-admin/admin-users/admin-users.component';
-import { AdminUserUpdateComponent } from './component/15-admin/admin-user-update/admin-user-update.component';
-import { AdminProductShowComponent } from './component/15-admin/admin-product-show/admin-product-show.component';
-import { AdminCategoryShowComponent } from './component/15-admin/admin-category-show/admin-category-show.component';
-import { AdminCategoryEditComponent } from './component/15-admin/admin-category-edit/admin-category-edit.component';
-import { AdminProductEditComponent } from './component/15-admin/admin-product-edit/admin-product-edit.component';
-
+import { AdminCategoriesComponent } from './component/15-admin/categories/admin-categories/admin-categories.component';
+import { AdminUsersComponent } from './component/15-admin/users/admin-users/admin-users.component';
+import { AdminUserUpdateComponent } from './component/15-admin/users/admin-user-update/admin-user-update.component';
+import { AdminCategoryShowComponent } from './component/15-admin/categories/admin-category-show/admin-category-show.component';
+import { AdminCategoryCreateComponent } from './component/15-admin/categories/admin-category-create/admin-category-create.component';
+import { AdminCategoryEditComponent } from './component/15-admin/categories/admin-category-edit/admin-category-edit.component';
+import { AdminProductsComponent } from './component/15-admin/products/admin-products/admin-products.component';
+import { AdminProductShowComponent } from './component/15-admin/products/admin-product-show/admin-product-show.component';
+import { AdminProductEditComponent } from './component/15-admin/products/admin-product-edit/admin-product-edit.component';
+import { AdminProductCreateComponent } from './component/15-admin/products/admin-product-create/admin-product-create.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'shop',component:ShopComponent},
@@ -25,11 +26,13 @@ const routes: Routes = [
   {path:'faq',component:FAQComponent},
   {path:'cart',component:CartComponent},
   {path:'wishlist',component:WishlistComponent},
-  {path:'detail',component:ProductDetailComponent},
+  {path:'detail/:id',component:ProductDetailComponent},
   {path:"admin-categories",component:AdminCategoriesComponent},
+  {path:"admin-category-create",component:AdminCategoryCreateComponent},
   {path:"admin-category-show/:id",component:AdminCategoryShowComponent},
   {path:"admin-category-edit/:id",component:AdminCategoryEditComponent},
   {path:"admin-products",component:AdminProductsComponent},
+  {path:'admin-product-create',component:AdminProductCreateComponent},
   {path:'admin-product-show/:id',component:AdminProductShowComponent},
   {path:'admin-product-edit/:id',component:AdminProductEditComponent},
   {path:"admin-users",component:AdminUsersComponent},

@@ -46,8 +46,14 @@ export class ProductService {
     return this.httpClient.get(`${environment.apiUrl}products`)
   }
   
+  getAllProducts() {
+    return this.httpClient.get(`${environment.apiUrl}products/all`)
+  }
+  
   getProductsById(id:number) {
     return this.httpClient.get(`${environment.apiUrl}products/${id}`)
   }
-
+  getProductByCategoryId(category_id:number){
+    return this.httpClient.get(`${environment.apiUrl}categories/${category_id}/products`)
+  }
 }

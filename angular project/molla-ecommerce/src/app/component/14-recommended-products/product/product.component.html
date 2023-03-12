@@ -2,7 +2,7 @@
     <div class="product product-2">
       <figure class="product-media">
         <!-- <span class="product-label label-circle label-sale">Sale</span> -->
-        <a href="product.html">
+        <a [routerLink]="['/detail',product.id]">
           <img
             [src]="product.image"
             alt="Product image"
@@ -20,7 +20,7 @@
         <!-- End .product-action -->
 
         <div class="product-action">
-          <a href="#" class="btn-product btn-cart" title="Add to cart"
+          <a (click)="addProductToCart()" class="btn-product btn-cart" title="Add to cart"
             ><span>add to cart</span></a
           >
           <a
@@ -40,7 +40,7 @@
         </div>
         <!-- End .product-cat -->
         <h3 class="product-title">
-          <a href="product.html">{{ product.name }}</a>
+          <a [routerLink]="['/detail',product.id]">{{ product.name }}</a>
         </h3>
         <!-- End .product-title -->
         <div class="product-price">

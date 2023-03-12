@@ -1,4 +1,5 @@
 import { Category } from "./category"
+import { Color } from "./color"
 
 export interface Product {
   id: number,
@@ -9,7 +10,9 @@ export interface Product {
   discount: number,
   category_id: number,
   color_id: number,
+  color: Color,
   category: Category,
-  reviews_count: number
-  reviews_avg_rating: number
+  reviews_count: number,
+  reviews_avg_rating: number,
+
 }

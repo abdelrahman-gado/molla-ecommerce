@@ -24,14 +24,19 @@ import { RecommendedProductsComponent } from './component/14-recommended-product
 import { ProductComponent } from './component/14-recommended-products/product/product.component';
 import { TrendingComponent } from './component/13-trending/trending.component';
 import { TrendingProductComponent } from './component/13-trending/trending-product/trending-product.component';
-import { AdminCategoriesComponent } from './component/15-admin/admin-categories/admin-categories.component';
-import { AdminProductsComponent } from './component/15-admin/admin-products/admin-products.component';
-import { AdminUsersComponent } from './component/15-admin/admin-users/admin-users.component';
-import { AdminUserUpdateComponent } from './component/15-admin/admin-user-update/admin-user-update.component';
-import { AdminProductEditComponent } from './component/15-admin/admin-product-edit/admin-product-edit.component';
-import { AdminProductShowComponent } from './component/15-admin/admin-product-show/admin-product-show.component';
-import { AdminCategoryShowComponent } from './component/15-admin/admin-category-show/admin-category-show.component';
-import { AdminCategoryEditComponent } from './component/15-admin/admin-category-edit/admin-category-edit.component';
+import { AdminUsersComponent } from './component/15-admin/users/admin-users/admin-users.component';
+import { AdminUserUpdateComponent } from './component/15-admin/users/admin-user-update/admin-user-update.component';
+import { AdminCategoriesComponent } from './component/15-admin/categories/admin-categories/admin-categories.component';
+import { AdminCategoryShowComponent } from './component/15-admin/categories/admin-category-show/admin-category-show.component';
+import { AdminCategoryCreateComponent } from './component/15-admin/categories/admin-category-create/admin-category-create.component';
+import { AdminCategoryEditComponent } from './component/15-admin/categories/admin-category-edit/admin-category-edit.component';
+import { AdminProductsComponent } from './component/15-admin/products/admin-products/admin-products.component';
+import { AdminProductEditComponent } from './component/15-admin/products/admin-product-edit/admin-product-edit.component';
+import { AdminProductShowComponent } from './component/15-admin/products/admin-product-show/admin-product-show.component';
+import { CartTableComponent } from './component/08-cart/cart-table/cart-table.component';
+import { CartTotalComponent } from './component/08-cart/cart-total/cart-total.component';
+import { AdminProductCreateComponent } from './component/15-admin/products/admin-product-create/admin-product-create.component';
+
 
 @NgModule({
   declarations: [
@@ -65,6 +70,10 @@ import { AdminCategoryEditComponent } from './component/15-admin/admin-category-
     AdminProductShowComponent,
     AdminCategoryShowComponent,
     AdminCategoryEditComponent,
+    CartTableComponent,
+    CartTotalComponent,
+    AdminCategoryCreateComponent,
+    AdminProductCreateComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule],
   providers: [],

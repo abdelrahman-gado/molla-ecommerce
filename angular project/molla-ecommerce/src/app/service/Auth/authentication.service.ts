@@ -16,12 +16,33 @@ export class AuthenticationService {
     };
     return this.http.post(`${environment.apiUrl}auth/register`, data);
   }
-
-  categoryUpdate(data:any,id:number){
-return this.http.post(`${environment.apiUrl}admin/categories/${id}?_method=PUT`,data)
+ userUpdate(formData:any,id:number){
+return this.http.post(`${environment.apiUrl}users/${id}?_method=PUT`,formData)
+  }
+  userDestroy(id:number){
+    return this.http.delete(`${environment.apiUrl}users/${id}`)
   }
 
-  productUpdate(data:any,id:number){
-return this.http.post(`${environment.apiUrl}admin/products/${id}?_method=PUT`,data)
+  categoryCreate(formData:any,id:number){
+  return this.http.post(`${environment.apiUrl}admin/categories`,formData)
   }
+  categoryUpdate(formData:any,id:number){
+return this.http.post(`${environment.apiUrl}admin/categories/${id}?_method=PUT`,formData)
+  }
+  categoryDestroy(id:number){
+    return this.http.delete(`${environment.apiUrl}admin/categories/${id}`)
+  }
+
+
+  productCreate(formData:any){
+return this.http.post(`${environment.apiUrl}admin/products`,formData)
+  }
+  productUpdate(formData:any,id:number){
+return this.http.post(`${environment.apiUrl}admin/products/${id}?_method=PUT`,formData)
+  }
+  productDestroy(id:number){
+return this.http.delete(`${environment.apiUrl}admin/products/${id}`)
+  }
+
+ 
 }
